@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+hub/hub.log
+hub/secrets.toml
+hub/app.json
+hub/kindle-hub.ico
+hub/cache/

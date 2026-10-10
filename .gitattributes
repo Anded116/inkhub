@@ -1,0 +1,6 @@
+# Скрипты для Kindle выполняет его shell: переводы строк только LF, независимо от настроек Git на Windows.
+* text=auto eol=lf
+*.ttf binary
+*.ico binary
+kindle/kindleclock/bin/fbink binary
+kindle/kindleclock/bin/luajit binary

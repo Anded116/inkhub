@@ -1,0 +1,28 @@
+[server]
+host = "0.0.0.0"
+port = 8765
+
+[screen]
+# Какие виджеты показывать вокруг часов. Расположение по ориентациям — LAYOUTS в render.py.
+widgets = ["weather", "calendar", "bitcoin"]
+
+[weather]
+# Координаты для прогноза (здесь — Москва). Свои удобнее вписать в secrets.toml, раздел [weather].
+latitude = 55.7558
+longitude = 37.6173
+refresh_min = 15
+
+[bitcoin]
+currency = "usd"
+refresh_min = 5
+
+[calendar]
+# Ссылки на календари — в secrets.toml (пример: secrets.example.toml).
+refresh_min = 5
+# Весь экран инвертируется, когда до встречи осталось столько минут или меньше...
+alert_before_min = 10
+# ...и пока встреча идёт (false — только до начала).
+alert_while_ongoing = true
+
+[hour_mosaic]
+db = '%APPDATA%\com.clawbuster.hour-mosaic\hour-mosaic.db'
